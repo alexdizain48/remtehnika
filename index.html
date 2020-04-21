@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Ремонт цифровой техники в Липецке">
+
+    <title>Ремтехника</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<header class="header">
+    <div class="sticky">
+
+        <div class="header-info-wrapper">
+            <div class="container">
+                <div class="row header-info align-items-center">
+                    <div class="logo-top text-center">
+                        <img class="img-fluid" src="img/banner.png"/>
+                    </div>
+                    <div class="btn-open-menu">
+                        <button class="btn" type="button">
+                            <svg width="30" height="30">
+                                <title>Меню</title>
+                                <path stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                      stroke-miterlimit="10"
+                                      d="M4 7h22M4 15h22M4 23h22"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="top-info-div  text-center">
+                        <span>СЕРВИСНЫЙ ЦЕНТР</span>
+                        <p>ремонт цифровой техники</p>
+                    </div>
+                    <div class="phone-div">
+                        <div class="b-inline-flex phone-top">
+                            <img src="img/phone-logo.png"/>
+                            <span>(4742)20-07-15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="nav-sticky-top" class="sticky-element">
+            <div class="sticky-anchor"></div>
+            <div id="navbar" class="navbar justify-content-center sticky-content">
+                <nav class="nav">
+                    <a href="#garant" title="Гарантия" class="nav-link">Гарантия</a>
+                    <a href="#services" title="Мы делаем" class="nav-link">Мы делаем</a>
+                    <a href="#price-and-reviews" title="Стоимость услуг" class="nav-link">Стоимость услуг</a>
+                    <a href="#reviews" title="Стоимость услуг" class="nav-link">Отзывы о нас</a>
+                    <a href="#stock" class="nav-link stock">Скидка 25%</a>
+                    <a href="blog.html" class="nav-link">Блог</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- <div class="btn-open-menu">
+             <button class="btn" type="button">
+                 <svg width="30" height="30">
+                     <title>Меню</title>
+                     <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                           d="M4 7h22M4 15h22M4 23h22"></path>
+                 </svg>
+             </button>
+         </div>-->
+
+    </div>
+</header>
+
+<div class="main-content">
+
+    <section id="garant" data-section="garant">
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                <div class="col-md-6">
+                    <h1 class="text-center">Срочная Компьютерная Помощь на Дому!</h1>
+                    <div class="advertising text-center"> <!-- Рекламный блок -->
+                        <p>До конца апреля – cкидка 25% при первом обращении!</p>
+                    </div>
+                    <div class="garant-list">
+                        <p><strong>Официальный сервисный центр: </strong></p>
+                        <ul>
+                            <li>Выезд специалиста и диагностика ВСЕГДА бесплатно</li>
+                            <li>Выезжаем к Вам течении 15 минут после звонка.</li>
+                            <li>Около 94% поломок устраняем в течение 1 часа на Дому.</li>
+                            <li>Консультируем Вас по всем вопросам на месте.</li>
+                            <li>При необходимости сложных работ БЕСПЛАТНО доставим Вашу технику в Сервис-Центр и
+                                привезём
+                                обратно после ремонта.
+                            </li>
+                            <li>Все наши мастера проверенные и дипломированные специалисты.</li>
+                            <li>Отвечаем за качество работы и даём гарантию до 3-х лет на все работы!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" data-section="services">
+
+        <div class="submit-your-application">
+            <div class="container d-flex justify-content-center">
+                <div class="col-md-6">
+                    <p>Оставьте заявку на консультацию ТУТ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row justify-content-md-center">
+                <div class="col-md-4 d-block form-phone-div">
+                    <form class="text-center" action="" method="post" enctype="multipart/form-data" role="form">
+                        <div class="form-group text-center">
+                            <input type="tel" name="phone" id="phone" class="form-control bfh-phone"
+                                   data-format="+7 (ddd) ddd-dddd" value="" pattern="(\+[\d\ \(\)\-]{16})"/>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Получить консультацию</button>
+                    </form>
+                    <p class="privacy_policy">Оставляя заявку, вы соглашаетесь с <br>
+                        <a href="" data-toggle="modal" data-target="#confidentialityModal">политикой
+                            конфиденциальности</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Самые востребованные работы нашего центра:</h1>
+                </div>
+            </div>
+
+
+            <!--<div id="priner_id">нажми на меня</div><br>
+            <p class='second'>lorem ipsum dolor</p>-->
+
+
+            <div class="row d-flex align-items-center">
+                <div class="col-md-7">
+                    <ul class="service-list">
+                        <li class="service-list-category">
+                            <p class="servise-name">Компьютеры</p>
+                            <ul>
+                                <li>Сборка компьютеров</li>
+                                <li>Модернизация компьютеров</li>
+                                <li>Диагностика компьютеров</li>
+                                <li>Восстановление данных</li>
+                                <li>Установка программ</li>
+                            </ul>
+                        </li>
+                        <li class="service-list-category">
+                            <p class="servise-name">Ноутбуки</p>
+                            <ul>
+                                <li>Чистка ноутбука</li>
+                                <li>Ремонт после залития</li>
+                                <li>Замена экрана на ноутбуке</li>
+                                <li>Диагностика ноутбука</li>
+                                <li>Замена разъемов</li>
+                                <li>Замена видеочипов и мостов</li>
+                            </ul>
+                        </li>
+                        <li class="service-list-category">
+                            <p class="servise-name">Windows</p>
+                            <ul>
+                                <li>Установка WINDOWS XP, Vista, 7, 8, 10</li>
+                                <li>Переустановка WINDOWS XP, Vista, 7, 8, 10</li>
+                                <li>Восстановление WINDOWS</li>
+                                <li>Настройка WINDOWS</li>
+                            </ul>
+                        </li>
+                        <li class="service-list-category">
+                            <p class="servise-name">Интернет</p>
+                            <ul>
+                                <li>Настройка роутера</li>
+                                <li>Настройка Wi-Fi</li>
+                                <li>Точка Wi-Fi "под ключ"</li>
+                                <li>Монтаж и настройка сети</li>
+                                <li>Настройка WINDOWS SERVER</li>
+                                <li>Настройка LINUX SERVER</li>
+                                <li>Подключение Интернет</li>
+                            </ul>
+                        </li>
+                        <li class="service-list-category">
+                            <p class="servise-name">Вирусы</p>
+                            <ul>
+                                <li>Удаление вирусов</li>
+                                <li>Удаление баннеров</li>
+                                <li>Удаление блокировщиков</li>
+                                <li>Установка любого антивируса</li>
+                                <li>Настройка FIREWALL</li>
+                                <li>Безопасный доступ в Интернет</li>
+                                <li>Родительский контроль</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <div class="services-img">
+                        <p>
+                            <img class="img-fluid" src="img/workshop-1.jpg">
+                        </p>
+                        <p>
+                            <img class="img-fluid" src="img/workshop-2.jpg">
+                        </p>
+                        <p>
+                            <img class="img-fluid" src="img/workshop-3.jpg">
+                        </p>
+                        <p>
+                            <img class="img-fluid" src="img/workshop-3.jpg">
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="price-and-reviews" data-section="price-and-reviews">
+        <div class="container-fluid">
+
+            <div id="price" class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Цены на услуги</h2>
+                </div>
+            </div>
+
+            <div class="row price-content justify-content-center">
+
+                <ul class="price-list">
+
+                    <li class="price-item">
+                        <div class="container">
+                            <div class="price-item-inner">
+                                <div class="d-flex price-item-row">
+                                    <div class="price-item-col-text">Переустановка операционной системы Windows, Linux,
+                                        Mac OS
+                                    </div>
+                                    <div class="price-item-col-price">- от <span class="js-price">450</span> руб
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="d-flex price-item">
+                        <div class="container">
+                            <div class="price-item-inner">
+                                <div class="d-flex price-item-row">
+                                    <div class="price-item-col-text">Комплексной обслуживание компьютеров для
+                                        организаций и юридических лиц Lorem ipsum dolor.
+                                    </div>
+                                    <div class="price-item-col-price">- от <span class="js-price">450</span> руб
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="d-flex price-item">
+                        <div class="container">
+                            <div class="price-item-inner">
+                                <div class="d-flex price-item-row">
+                                    <div class="price-item-col-text">Переустановка операционной системы Windows,
+                                        Linux,
+                                        Mac OS
+                                    </div>
+                                    <div class="price-item-col-price">- от <span class="js-price">450</span> руб
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div id="reviews" class="reviews-content" data-section="reviews">
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="reviews-title">Отзывы о нас</h2>
+                        <button data-toggle="modal" data-target="#revievSendForm" type="submit"
+                                class="btn btn-primary ml-2">Оставить отзыв
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row reviews-items justify-content-center">
+
+                    <div class="review-item">
+                        <div class="review-item-inner">
+                            <div class="d-inline-flex title justify-content-center">
+                                <span class="review-name">Денис Чересов</span>
+                                <div class="rating-mini ml-2">
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                Закончился антивирус, компьютер начал тормозить, мастер провел диагностику,
+                                и согласовал стоимость работ. Все проблемы устранены, я доволен.
+                            </div>
+                            <div class="review-full-text">
+                                <a href="" data-toggle="modal" data-target="#revievModal">Читать полностью</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-item-inner">
+                            <div class="d-inline-flex title justify-content-center">
+                                <span class="review-name">Александра Любимовская</span>
+                                <div class="rating-mini ml-2">
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                Добрый день! Хочу мастерам оставить отзыв.
+                                Начну с начала: компьютер стал виснуть, программы
+                                долго не включались, а порой и загрузить что-то легкое
+                                (папку, текстовый документ) было сложно. Мучилась, мучилась,
+                                надоело. Вызвала специалиста на дом, чтобы это исправить.
+                                Мастер приехал в назначенное время, проверил работу компьютера и
+                                устранил все неполадки. Обошлось мне это недорого, что также стало
+                                приятным сюрпризом.
+                            </div>
+                            <div class="review-full-text">
+                                <a href="" data-toggle="modal" data-target="#revievModal">Читать полностью</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-item-inner">
+                            <div class="d-inline-flex title justify-content-center">
+                                <span class="review-name">Денис Чересов</span>
+                                <div class="rating-mini ml-2">
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                Закончился антивирус, компьютер начал тормозить, мастер провел диагностику,
+                                и согласовал стоимость работ. Все проблемы устранены, я доволен.
+                            </div>
+                            <div class="review-full-text">
+                                <a href="" data-toggle="modal" data-target="#revievModal">Читать полностью</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-item-inner">
+                            <div class="d-inline-flex title justify-content-center">
+                                <span class="review-name">Александра Любимовская</span>
+                                <div class="rating-mini ml-2">
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                Добрый день! Хочу мастерам оставить отзыв.
+                                Начну с начала: компьютер стал виснуть, программы
+                                долго не включались, а порой и загрузить что-то легкое
+                                (папку, текстовый документ) было сложно. Мучилась, мучилась,
+                                надоело. Вызвала специалиста на дом, чтобы это исправить.
+                                Мастер приехал в назначенное время, проверил работу компьютера и
+                                устранил все неполадки. Обошлось мне это недорого, что также стало
+                                приятным сюрпризом.
+                            </div>
+                            <div class="review-full-text">
+                                <a href="" data-toggle="modal" data-target="#revievModal">Читать полностью</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="stock" data-section="stock">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Получите скидку 25% сегодня</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center">
+                <div class="col-md-4 d-block form-phone-div">
+                    <form class="text-center" action="" method="post" enctype="multipart/form-data" role="form">
+                        <div class="form-group text-center">
+                            <input type="text" name="name" id="name" placeholder="Ваше имя"
+                                   class="form-control form-name"/>
+                        </div>
+                        <div class="form-group text-center">
+                            <input type="tel" name="phone" id="phone" class="form-control bfh-phone"
+                                   data-format="+7 (ddd) ddd-dddd" value="" pattern="(\+[\d\ \(\)\-]{16})"/>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Заказать звонок</button>
+                    </form>
+                    <p class="privacy_policy">Оставляя заявку, вы соглашаетесь с <br>
+                        <a href="" data-toggle="modal" data-target="#confidentialityModal">политикой
+                            конфиденциальности</a></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="address-map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A356f3be9a12cc43c020d3155d5a94929a2860ace4bb822a19baf2113ddc4f5f3&amp;source=constructor"
+                width="100%" height="400" frameborder="0"></iframe>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 logo-bottom">
+                    <img src="img/banner.png"/>
+                </div>
+                <div class="col-md-6 b-inline-flex address-bottom">
+                    <img src="img/phone-logo.png"/>
+                    <span>(4742)20-07-15</span>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="confidentialityModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confidentialityModalTitle">Пользовательское соглашение</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Я, субъект персональных данных,
+                    в соответствии с Федеральным законом от 27 июля 2006 года № 152
+                    «О персональных данных» предоставляю ООО "ПКП" (далее - Оператор),
+                    расположенному по адресу г. Санкт-Петербург, Лиговский пр-кт, д 270 к 1, оф. 128,
+                    согласие на обработку персональных данных, указанных мной в форме веб-чата и/или
+                    в форме заказа обратного звонка на сайте выездноймастер.рф в сети «Интернет»,
+                    владельцем которого является Оператор.
+                </p>
+                <ol>
+                    <li>Состав предоставляемых мной персональных данных является следующим: Имя, адрес электронной почты
+                        и номер телефона.
+                    </li>
+                    <li>Целями обработки моих персональных данных являются: обеспечение обмена короткими текстовыми
+                        сообщениями в режиме онлайн-диалога и обеспечение функционирования обратного звонка.
+                    </li>
+                    <li>Согласие предоставляется на совершение следующих действий (операций) с указанными в настоящем
+                        согласии персональными данными: сбор, систематизацию, накопление, хранение, уточнение
+                        (обновление, изменение), использование, передачу (предоставление, доступ), блокирование,
+                        удаление, уничтожение, осуществляемых как с использованием средств автоматизации
+                        (автоматизированная обработка), так и без использования таких средств (неавтоматизированная
+                        обработка).
+                    </li>
+                    <li>Я понимаю и соглашаюсь с тем, что предоставление Оператору какой-либо информации о себе, не
+                        являющейся контактной и не относящейся к целям настоящего согласия, а равно предоставление
+                        информации, относящейся к государственной, банковской и/или коммерческой тайне, информации о
+                        расовой и/или национальной принадлежности, политических взглядах, религиозных или философских
+                        убеждениях, состоянии здоровья, интимной жизни запрещено.
+                    </li>
+                    <li>В случае принятия мной решения о предоставлении Оператору какой-либо информации (каких-либо
+                        данных), я обязуюсь предоставлять исключительно достоверную и актуальную информацию и не вправе
+                        вводить Оператора в заблуждение в отношении своей личности, сообщать ложную или недостоверную
+                        информацию о себе.  Я понимаю и соглашаюсь с тем, что Оператор не проверяет достоверность
+                        персональных данных, предоставляемых мной, и не имеет возможности оценивать мою дееспособность и
+                        исходит из того, что я предоставляю достоверные персональные данные и поддерживаю такие данные в
+                        актуальном состоянии.
+                    </li>
+                    <li>Согласие действует по достижении целей обработки или в случае утраты необходимости в достижении
+                        этих целей, если иное не предусмотрено федеральным законом.
+                    </li>
+                    <li>Согласие может быть отозвано мною в любое время на основании моего письменного заявления.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="revievModal" tabindex="-1" role="dialog" aria-labelledby="revievModalTitle"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="revievModalTitle">Денис Чересов</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Закончился антивирус, компьютер начал тормозить, мастер провел диагностику,
+                    и согласовал стоимость работ. Все проблемы устранены, я доволен.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="revievSendForm" tabindex="-1" role="dialog" aria-labelledby="revievSendFormTitle"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="revievSendFormTitle">Нам важно ваше мнение</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="row justify-content-center">
+                    <div class="col-md-12 d-block form-reviews-div">
+                        <form class="text-center" action="" method="post" enctype="multipart/form-data" role="form">
+                            <div class="form-group text-center">
+                                <input type="text" name="name" id="nameRevievSendForm" placeholder="Ваше имя"
+                                       class="form-control form-name"/>
+                            </div>
+                            <div class="form-group d-flex flex-wrap text-center">
+                                <input type="text" name="email" id="emailRevievSendForm" placeholder="Ваше email"
+                                       class="form-control form-email"/>
+                                <input type="tel" name="phone" id="phoneRevievSendForm" class="form-control bfh-phone"
+                                       data-format="+7 (ddd) ddd-dddd" value="" pattern="(\+[\d\ \(\)\-]{16})"/>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="reviewsRevievSendForm" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Отправить</button>
+                        </form>
+                        <p class="privacy_policy">Оставляя заявку, вы соглашаетесь с <br>
+                            <a href="" data-toggle="modal" data-target="#confidentialityModal">политикой
+                                конфиденциальности</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-formhelpers-phone.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
