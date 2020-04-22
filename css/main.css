@@ -72,7 +72,7 @@ a:hover {
 /*--- HEADER ---*/
 .header {
     background-color: #FFFFFF;
-    padding-top: 118px;
+    padding-top: 110px;
     position: relative;
     background-position: 50% 100%;
 }
@@ -198,15 +198,16 @@ a:hover {
 }*/
 
 /*--- NAV ---*/
-.sticky-content.fixed{
+.sticky-content.fixed {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 }
+
 .navbar {
     padding-top: 0;
-    padding-bottom: 7px;
+    padding-bottom: 0;
     background: #FFFFFF;
 }
 
@@ -214,6 +215,7 @@ a:hover {
     color: rgb(85, 79, 79);
     font-size: 19px;
     text-decoration: underline;
+    padding: 6px 20px 12px 20px;
 }
 
 #navbar {
@@ -222,6 +224,15 @@ a:hover {
 
 #navbar .stock {
     color: red;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0;
 }
 
 /*---------- garant ------------*/
@@ -341,11 +352,16 @@ h1 {
     margin-bottom: 15px;
 }
 
-.service-list-category ul li {
+.service-list-category ul li a {
     font-size: 20px;
     font-weight: 500;
     line-height: 28px;
     color: rgb(35, 29, 29);
+    transition: all 0.2s ease 0s;
+}
+.service-list-category ul li:hover {
+    color: rgb(0, 0, 0);
+    list-style-type: disc;
 }
 
 .services-img {
@@ -625,6 +641,9 @@ h1 {
     font-size: 24px;
 }
 
+aside {
+    margin-bottom: 17px;
+}
 .tutorsList article {
     background: none repeat scroll 0 0 #fff;
     border-bottom: 1px solid #e5e5e5;
@@ -740,16 +759,21 @@ h1 {
 /*--------------------- media queries ---------------------*/
 
 @media (max-width: 550px) {
+    h1, #services h1 {
+        font-size: 40px;
+        line-height: 43px;
+    }
+
+    .header {
+        padding-top: 216px;
+    }
+
     .sticky {
         position: absolute;
         top: 0;
         right: 0;
         left: 0;
         z-index: 10;
-    }
-
-    .logo-top {
-        margin: 0 -20px 0 15px;
     }
 
     .logo-top .img-fluid {
@@ -760,25 +784,24 @@ h1 {
         margin: 15px;
     }
 
-    /*.navbar {
-        position: absolute;
-        right: 0;
-        width: 273px;
-        height: auto;
-        background-color: #fff;
-        z-index: 10;
-        top: 0;
-        display: block;
-    }*/
+    .navbar {
+        justify-content: flex-end;
+    }
 
-    /*.btn-open-menu{
-        position: absolute;
-        top: 12px;
-        right: 0;
-        border: none;
-        cursor: pointer;
-        display: block;
-    }*/
+    .nav-link {
+        text-align: center;
+    }
+
+    .submit-your-application p {
+        margin: 10px auto 15px;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .price-item-row {
+        font-size: 21px;
+    }
 }
 
 @media (min-width: 551px) and (max-width: 768px) {
@@ -788,9 +811,7 @@ h1 {
 }
 
 @media (min-width: 768px) {
-    .btn-open-menu {
-        display: none;
-    }
+
 }
 
 @media (max-width: 992px) {

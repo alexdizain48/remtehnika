@@ -7,14 +7,6 @@ $("#navbar").find("a").on('click', function (event) {
     }, 700);
 });
 
-$('#priner_id').on('click', function () {
-    /* $('div').toggleClass('change-mode');
-     $('span').toggleClass('change-mode2');
-     $('i').toggleClass('change-mode3');
-     $('#four').toggleClass('change-mode4');*/
-    $('.second').toggleClass('change-mode5');
-});
-
 var StickyElement = function(node){
     var doc = $(document),
         fixed = false,
@@ -43,7 +35,6 @@ var StickyElement = function(node){
 
     $(window).on('scroll', onScroll);
 };
-
 var demo = new StickyElement($('#nav-sticky-top'));
 
 $(window).resize(function () {
@@ -51,10 +42,11 @@ $(window).resize(function () {
 
         if (widthWind < 768) {
             /*$('.navbar').addClass('d-none');*/
+            $('.navbar-collapse a').click(function (e) {
+                $('.navbar-collapse').collapse('toggle');
+            });
 
 
-        } else {
-            /*$('.navbar').removeClass('d-none');*/
         }
     }
 );
