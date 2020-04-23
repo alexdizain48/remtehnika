@@ -2,6 +2,20 @@ body {
     position: relative;
 }
 
+.hidden-mobile {
+    display: block!important;
+}
+
+.visible-mobile {
+    display: none!important;
+}
+
+h1, .h1 {
+    margin: 20px 0;
+    font-size: 45px;
+    line-height: 55px;
+}
+
 .btn {
     border-radius: 0 !important;
 }
@@ -39,7 +53,11 @@ a:hover {
     z-index: 9999;
 }
 
-.modal-dialog { /*-------------------------------------------------- media*/
+.modal {
+    padding-left: 17px;
+}
+
+.modal-dialog {
     max-width: 600px;
 }
 
@@ -145,57 +163,9 @@ a:hover {
     font-size: 22px;
 }
 
-/*.form-phone-div {
-    flex-grow: 100;
-    flex-shrink: 1;
-}
-
-.form-phone-div .form {
-    padding: 4px 0 4px;
-    margin: 0 auto;
-    justify-content: center;
-}*/
-
 .logo-top img {
     margin: 5px auto;
 }
-
-/*.header .top-info-div {
-    background-color: rgb(56, 146, 208);
-    -webkit-transform: skewX(-15deg);
-    -moz-transform: skewX(-15deg);
-    -ms-transform: skewX(-15deg);
-    -o-transform: skewX(-15deg);
-    transform: skewX(-15deg);
-}
-
-.top-info-div span {
-    font-size: 20px;
-    color: #FFFFFF;
-    margin: 17px 0;
-    -webkit-transform: skewX(15deg);
-    -moz-transform: skewX(15deg);
-    -ms-transform: skewX(15deg);
-    -o-transform: skewX(15deg);
-    transform: skewX(15deg);
-}*/
-
-/*.header .form-phone-div {
-    padding-top: 7px;
-}
-
-.header .form-phone-div form {
-    margin: 0 auto;
-    text-align: center;
-}
-
-.header .form-phone-div .form-group {
-    margin-bottom: 0;
-}
-
-.header .btn {
-    width: 160px;
-}*/
 
 /*--- NAV ---*/
 .sticky-content.fixed {
@@ -250,8 +220,6 @@ a:hover {
 
 h1 {
     margin: 20px 0;
-    font-size: 45px;
-    line-height: 55px;
     font-family: PT Sans, Arial, sans-serif;
     color: #FFFFFF;
 }
@@ -278,8 +246,6 @@ h1 {
 
 #services h1 {
     margin: 20px 0;
-    font-size: 45px;
-    line-height: 55px;
     font-family: PT Sans, Arial, sans-serif;
     color: #123b69;
 }
@@ -290,7 +256,7 @@ h1 {
     top: -26px;
 }
 
-.submit-your-application .col-md-6 {
+.submit-your-application .col-md-8 {
     background-color: rgb(56, 146, 208);
     -webkit-transform: skewX(-15deg);
     -moz-transform: skewX(-15deg);
@@ -359,6 +325,7 @@ h1 {
     color: rgb(35, 29, 29);
     transition: all 0.2s ease 0s;
 }
+
 .service-list-category ul li:hover {
     color: rgb(0, 0, 0);
     list-style-type: disc;
@@ -582,7 +549,8 @@ h1 {
 }
 
 #address-map iframe {
-    margin-bottom: -5px
+    margin-bottom: -5px;
+    height: 400px;
 }
 
 /*-------- footer ----------*/
@@ -596,15 +564,21 @@ h1 {
     width: 200px;
 }
 
-.address-bottom {
+.address-bottom span {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 19px;
+}
+
+.phone-bottom {
     text-align: right;
 }
 
-.address-bottom img {
+.phone-bottom img {
     width: 40px;
 }
 
-.address-bottom span {
+.phone-bottom span {
     color: #FFFFFF;
     font-size: 22px;
 }
@@ -614,19 +588,21 @@ h1 {
 .breadcrumb {
     margin-bottom: 0;
     background-color: #FFFFFF;
-}
-
-.nav ol {
-    padding: 0.5rem 1rem;
+    padding: 7px 15px 11px 15px;
 }
 
 .breadcrumb .breadcrumb-item {
     font-size: 19px;
 }
 
+.breadcrumb .breadcrumb-item a {
+    font-size: 19px !important;
+    padding: 6px 1px 12px 0 !important;
+}
+
 /*------- blog articles ---------*/
-.title-page {
-    margin-top: 20px;
+.main-content {
+    margin-top: -10px;
 }
 
 .title-page h1 {
@@ -644,6 +620,7 @@ h1 {
 aside {
     margin-bottom: 17px;
 }
+
 .tutorsList article {
     background: none repeat scroll 0 0 #fff;
     border-bottom: 1px solid #e5e5e5;
@@ -759,9 +736,36 @@ aside {
 /*--------------------- media queries ---------------------*/
 
 @media (max-width: 550px) {
-    h1, #services h1 {
-        font-size: 40px;
-        line-height: 43px;
+
+    #services .form-phone-div {
+        margin-top: 20px;
+    }
+
+    #services, #price-and-reviews, #stock .container-fluid {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #reviews {
+        padding-top: 20px;
+    }
+
+    .price-content {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    h1, .h1 {
+        font-size: 36px;
+        line-height: 38px;
+    }
+
+    .servise-name {
+        font-size: 27px;
+    }
+
+    .service-list-category ul li a {
+        font-size: 18px;
     }
 
     .header {
@@ -802,24 +806,209 @@ aside {
     .price-item-row {
         font-size: 21px;
     }
-}
 
-@media (min-width: 551px) and (max-width: 768px) {
-    .logo-top .img-fluid {
-        max-width: 78%;
+    #address-map iframe {
+        height: 200px;
+    }
+
+    .footer .phone-bottom img {
+        width: 31px;
+    }
+
+    .footer .phone-bottom span {
+        font-size: 19px;
+    }
+
+    .form-reviews-div .form-email {
+        width: 100%;
+    }
+
+    .form-reviews-div .bfh-phone {
+        margin-top: 15px;
+        margin-left: 0 !important;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 550px) and (max-width: 768px) {
+    #services .form-phone-div {
+        margin-top: 20px;
+    }
+
+    #services, #price-and-reviews, #stock .container-fluid {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #reviews {
+        padding-top: 20px;
+    }
+
+    .price-content {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    h1, .h1 {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    .servise-name {
+        font-size: 27px;
+    }
+
+    .service-list-category ul li a {
+        font-size: 18px;
+    }
+
+    .header {
+        padding-top: 160px;
+    }
+
+    .sticky {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .logo-top .img-fluid {
+        max-width: 78%;
+    }
+
+    .phone-div {
+        margin: 15px;
+    }
+
+    .navbar {
+        justify-content: flex-end;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    .submit-your-application p {
+        margin: 10px auto 15px;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .price-item-row {
+        font-size: 21px;
+    }
+
+    #address-map iframe {
+        height: 200px;
+    }
+
+    .footer .phone-bottom img {
+        width: 31px;
+    }
+
+    .footer .phone-bottom span {
+        font-size: 19px;
+    }
+
+    .form-reviews-div .form-email {
+        width: 100%;
+    }
+
+    .form-reviews-div .bfh-phone {
+        margin-top: 15px;
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hidden-mobile {
+        display: none!important;
+    }
+
+    .visible-mobile {
+        display: block!important;
+    }
+
+    .navbar {
+        justify-content: flex-end;
+    }
 
 }
 
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .hidden-mobile {
+        display: none!important;
+    }
+
+    .visible-mobile {
+        display: block!important;
+    }
+
+    #services, #price-and-reviews, #stock .container-fluid {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #reviews {
+        padding-top: 20px;
+    }
+
+    .sticky {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .navbar {
+        justify-content: flex-end;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    #services .form-phone-div {
+        margin-top: -5px;
+    }
+
+    .submit-your-application p {
+        margin: 10px auto 15px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+    }
+
+    .main-content {
+        margin-top: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .hidden-mobile {
+        display: none!important;
+    }
+
+    .visible-mobile {
+        display: block!important;
+    }
+
+    .main-content {
+        margin-top: 12px;
+    }
+
+    #services .form-phone-div {
+        margin-top: 20px;
+    }
 
 }
 
 @media (max-width: 1200px) {
-    /*.btn-open-menu {
-        display: none;
-    }*/
+
 }

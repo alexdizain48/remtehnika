@@ -37,16 +37,3 @@ var StickyElement = function(node){
 };
 var demo = new StickyElement($('#nav-sticky-top'));
 
-$(window).resize(function () {
-        const widthWind = $(this).width();
-
-        if (widthWind < 768) {
-            /*$('.navbar').addClass('d-none');*/
-            $('.navbar-collapse a').click(function (e) {
-                $('.navbar-collapse').collapse('toggle');
-            });
-
-
-        }
-    }
-);
